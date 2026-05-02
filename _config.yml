@@ -24,13 +24,13 @@ repository               : "raulurriza.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Raúl Urriza Arpal"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  bio              : "MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"
+  location         : "Torun, Poland"
+  employer         : "Nicolaus Copernicus University"
   uri              : # URL
-  email            : "none@example.org" 
+  email            : "raul.urriza@umk.pl" 
 
   # Academic websites
   academia         : # URL
