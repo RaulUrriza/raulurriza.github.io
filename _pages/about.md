@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: ""
+title: "Raul Urriza Arpal"
 author_profile: true
 redirect_from: 
   - /about/
