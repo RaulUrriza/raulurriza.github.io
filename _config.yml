@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Raul Urriza-Arpal"
+title                    : "Raul Urriza Arpal"
 title_separator          : "-"
 name                     : &name "Raul Urriza-Arpal"
 description              : &description "Raul Urriza's academic portfolio. MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"   # Update this with a general description of your site, this is the default if not overridden by a page
