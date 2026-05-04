@@ -9,11 +9,19 @@ redirect_from:
 
 {% include base_path %}
 
+Professional Profile
+======
+With a solid foundation in Physics, Biomedical Engineering and Optometry, I have consistently excelled in creating innovative technological solutions for eye health. My interdisciplinary expertise, merging advanced optical technologies with specialized biomedical engineering tools in information and communication, has enabled me to address complex medical challenges with a distinctive and effective approach. My experience encompasses both academic research and practical applications, driving progress in some different optical diagnostic systems.
+* Expert in the implementation and development of advanced optical interferometry methods for ocular tissue analysis.
+* Proven ability in the integration of medical diagnostic systems with artificial intelligence and machine learning technologies.
+* Developer of innovative biomedical devices, which could improve the acquisition of medical images of the eye.
+* Strong focus on applied research and improvement of eye health technologies through interdisciplinary collaborations.
+
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Biophysics, Nicolaus Copernicus University, 2027 (expected)
+* M.Sc. in Biomedical Engineering, University of Zaragoza, 2024
+* B.S. in Optics and Optometry, University of Zaragoza, 2021
 
 Work experience
 ======
