@@ -8,12 +8,10 @@ date: 2022-03-11
 I was honored to take home the first prize from Afflelou Challenge.
 
 <br>
-<br>
 
 That trip to Madrid was such a vibe—meeting the team and talking through big ideas with the staff was an unforgettable experience. Here is the first short interview I did in my career—a snapshot of a younger me right after winning this prize.
 
-<br>
-<br>  
+<br> 
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6915538307959410688" 
   height="940" 
