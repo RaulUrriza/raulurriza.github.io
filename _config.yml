@@ -227,7 +227,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  outreach:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -273,10 +273,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _outreach
   - scope:
       path: ""
-      type: portfolio
+      type: outreach
     values:
       layout: single
       author_profile: true
