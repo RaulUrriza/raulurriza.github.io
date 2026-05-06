@@ -5,7 +5,7 @@ collection: outreach
 date: 2022-03-11
 ---
 
-I was honored to take home first prize.
+I was honored to take home the first prize from Afflelou Challenge.
 
 <br>
 <br>
