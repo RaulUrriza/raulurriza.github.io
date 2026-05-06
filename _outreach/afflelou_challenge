@@ -1,6 +1,6 @@
 ---
 title: "2nd edition Afflelou Challenge"
-excerpt: "<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6915538307959410688" height="839" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>"
+excerpt: "<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6915538307959410688?collapsed=1" height="839" width="504" frameborder="0" allowfullscreen="" title="Publicación integrada"></iframe>"
 collection: outreach
 date: 2022-12-21
 ---
@@ -8,7 +8,7 @@ date: 2022-12-21
 I was awarded [prize name] by [Company Name] for [reason].
 
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6915538307959410688" 
-  height="839" 
+  height="100%" 
   width="100%" 
   frameborder="0" 
   allowfullscreen="" 
