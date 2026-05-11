@@ -6,32 +6,33 @@ author_profile: true
 ---
 
 <p style="font-size:13px; letter-spacing:0.12em; color:gray; text-transform:uppercase; margin:0 0 0.5rem;">Get in touch</p>
-<p style="font-size:22px; font-weight:500; margin:0 0 2rem; line-height:1.3;">No forms. No accounts.<br>Just reach out directly.</p>
+<p>No forms. No accounts.<br>Just reach out directly.</p>
 
 <div style="display:flex; flex-direction:column; gap:12px; max-width:600px;">
 
-  <!-- Email card with copy button -->
-  <div style="border:1px solid #ddd; border-radius:12px; padding:1.25rem 1.5rem;">
-    <div style="display:flex; align-items:center; justify-content:space-between;">
-      <div>
-        <p style="font-size:11px; color:gray; margin:0 0 2px; text-transform:uppercase; letter-spacing:0.08em;">Email</p>
-        <p style="font-size:15px; font-weight:500; margin:0;">raul.urriza@outlook.pl</p>
+  <!-- Email card -->
+  <a href="mailto:raul.urriza@outlook.pl" style="text-decoration:none; color:inherit;">
+    <div style="border:1px solid #ddd; border-radius:12px; padding:1.25rem 1.5rem;">
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <p style="font-size:11px; color:gray; margin:0 0 2px; text-transform:uppercase; letter-spacing:0.08em;">Email</p>
+          <p style="font-size:15px; font-weight:500; margin:0;">raul.urriza@outlook.pl</p>
+        </div>
+        <span style="font-size:13px; padding:6px 12px; border:1px solid #ddd; border-radius:8px;">Send →</span>
       </div>
-      <button onclick="
-        navigator.clipboard.writeText('raul.urriza+emailbox@outlook.pl');
-        this.textContent='✓ Copied!';
-        setTimeout(() => this.textContent='Copy', 2000);
-      " style="font-size:13px; padding:6px 12px; border:1px solid #ddd; border-radius:8px; background:white; cursor:pointer;">
-        Copy
-      </button>
     </div>
-  </div>
+  </a>
 
-  <!-- Phone card with click-to-call -->
+  <!-- Phone card -->
   <a href="tel:+48566113297" style="text-decoration:none; color:inherit;">
     <div style="border:1px solid #ddd; border-radius:12px; padding:1.25rem 1.5rem;">
-      <p style="font-size:11px; color:gray; margin:0 0 2px; text-transform:uppercase; letter-spacing:0.08em;">Phone</p>
-      <p style="font-size:15px; font-weight:500; margin:0;">+48 56 611 3297 →</p>
+      <div style="display:flex; align-items:center; justify-content:space-between;">
+        <div>
+          <p style="font-size:11px; color:gray; margin:0 0 2px; text-transform:uppercase; letter-spacing:0.08em;">Phone</p>
+          <p style="font-size:15px; font-weight:500; margin:0;">+48 56 611 3297</p>
+        </div>
+        <span style="font-size:13px; padding:6px 12px; border:1px solid #ddd; border-radius:8px;">Call →</span>
+      </div>
     </div>
   </a>
 
