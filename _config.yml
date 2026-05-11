@@ -11,8 +11,8 @@ locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Raul Urriza Arpal"
 title_separator          : "-"
-name                     : &name "Raul Urriza Arpal"
-description              : &description "Raul Urriza's academic portfolio. MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"   # Update this with a general description of your site, this is the default if not overridden by a page
+name                     : "Raul Urriza Arpal"
+description              : "Raul Urriza's academic portfolio. MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://raulurriza.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -34,7 +34,7 @@ author:
 
   # Academic websites
   academia         : # URL
-  arxiv            : # URL - Update with the correct link to your profile
+  arxiv            : # URL 
   googlescholar    : "https://scholar.google.com/citations?user=8k8qnx8AAAAJ&hl=en"
   inspire-hep      : # URL
   impactstory      : # URL
@@ -96,7 +96,7 @@ teaser                   :  # filename of teaser fallback teaser image placed in
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
-read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+read_more                : true # if enabled, adds "Read more" links to excerpts
 talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
@@ -138,7 +138,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -233,7 +233,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
+  contact:
+    output: true
+    permalink: /:collection/:path/
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -290,7 +292,14 @@ defaults:
       layout: talk
       author_profile: true
       share: true
-
+  # _contact
+  - scope:
+      path: ""
+      type: contact
+    values:
+      layout: contact
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:

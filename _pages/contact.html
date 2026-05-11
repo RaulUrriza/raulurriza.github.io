@@ -1,0 +1,27 @@
+---
+layout: archive
+title: "Contact Information"
+permalink: /contact/
+author_profile: true
+---
+
+{{ base_path }}
+
+
+{% comment %}
+  {% include archive-single.html %}
+  {# Ensure that _includes/archive-single.html exists #}
+{% for contact in site.data.contact %}
+  <div>
+    <strong>{{ contact.name }}</strong>: {{ contact.info }}
+  </div>
+{% endfor %}
+Otherwise, add your contact information statically below.
+{% endcomment %}
+
+<div>
+  <strong>Email:</strong> your@email.com
+</div>
+<div>
+  <strong>Phone:</strong> (123) 456-7890
+</div>
