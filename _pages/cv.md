@@ -25,20 +25,21 @@ Education
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* September 2024 – Present: Research Assistant | Marie Skłodowska-Curie PhD Fellow
+  * Nicolaus Copernicus University, Toruń, Poland
+  * BE-LIGHT project (MSCA Fellowship). Research combining advanced optical imaging techniques with AI-driven analysis.
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* September 2025: Research Intern
+  * Fundació de Recerca Sant Joan de Déu, Barcelona, Spain
+  * Developed theoretical and practical skills in super-resolution image analysis with Confocal Microscopy, STED and Raman Spectroscopy. Contributed to Collagen VI and Retinoblastoma projects through supervised hands-on tasks; worked with laboratory workflows and bioinformatics tools (FIJI and Python libraries).
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* July 2022 – September 2024: Optician and Optometrist
+  * AFFLELOU Grupo, Zaragoza, Spain
+  * Adaptation to new trends in optics, eye tests and vision correction technologies. Eye prescription, lenses and contact lens fitting, eye health prevention, and eyestrain measurement. Business development and personalized customer service.
+
+* January 2021 – May 2021: Optician and Optometrist
+  * OptiWeb, Zaragoza, Spain
+  * Prevention, detection and solution of visual problems, prescriptions, fitting and customer service.
   
 Skills
 ======
