@@ -205,13 +205,31 @@
   .visible-links {
     display: table;
 
+    @include breakpoint($large) {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
     li {
       display: table-cell;
       vertical-align: middle;
 
+      @include breakpoint($large) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+      }
+
       &:first-child {
         font-weight: bold;
         text-wrap: wrap;
+
+        @include breakpoint($large) {
+          flex: 0 0 auto;
+          justify-content: flex-start;
+        }
 
         a {
           margin-left: 0;
@@ -219,6 +237,10 @@
       }
 
       &:last-child {
+        @include breakpoint($large) {
+          flex: 0 0 auto;
+        }
+
         a {
           margin-right: 0;
         }
