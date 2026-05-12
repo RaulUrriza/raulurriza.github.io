@@ -46,7 +46,7 @@
   --c-text:         var(--global-text-color);
   --c-text-muted:   var(--global-text-color-light);
   --c-bg:           var(--global-bg-color);
-  --c-bg-subtle:    var(--global-bg-color);
+  --c-bg-subtle:    #3f3f3f;    /* slightly lighter than dark bg (#474747) */
   --c-border:       var(--global-border-color);
   --c-border-strong:var(--global-dark-border-color);
   --c-primary-tint: rgba(26, 110, 126, 0.15);
@@ -187,9 +187,22 @@ html, body {
   color: var(--c-primary);
 }
 
-/* Sidebar — transparent, no background fill */
+/* Sidebar background + full-bleed to left viewport edge.
+   On mobile the sidebar is in normal flow — no background needed.
+   On desktop (≥1024px) the sidebar is position:fixed.
+   box-shadow trick: offset-x -100vw moves the shadow 100vw left;
+   spread +100vw expands it back, so its right edge stays exactly at
+   the sidebar's right edge. The left edge is clipped at the viewport
+   boundary — no JS, no content shift, no extra elements. */
 .sidebar {
-  background-color: transparent;
+  background-color: transparent; /* no fill on mobile */
+}
+
+@media screen and (min-width: 1024px) {
+  .sidebar {
+    background-color: var(--c-bg-subtle);
+    box-shadow: -100vw 0 0 100vw var(--c-bg-subtle);
+  }
 }
 
 /* Avatar ring in brand colour */
