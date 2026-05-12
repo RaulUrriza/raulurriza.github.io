@@ -81,6 +81,8 @@ screen.orientation.addEventListener("change", function () {
 $btn.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
+  var expanded = $(this).attr('aria-expanded') === 'true';
+  $(this).attr('aria-expanded', !expanded);
 });
 
 updateNav();
