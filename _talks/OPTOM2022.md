@@ -1,6 +1,7 @@
 ---
 title: "A Study on Corneal Properties Through Digital Holography"
 collection: talks
+layout: null
 type: "Talk"
 permalink: https://www.optomcongreso.com/abstract2022/pdf/Orales2991.pdf
 venue: "IFEMA Madrid"
