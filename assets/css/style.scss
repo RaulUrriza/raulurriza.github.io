@@ -1,0 +1,431 @@
+---
+---
+
+/* ================================================================
+   CUSTOM STYLESHEET — Raúl Urriza Academic Site
+   Loaded after main.css; overrides are intentional.
+   ================================================================ */
+
+/* Google Font — Lora for headings only (body keeps the system stack).
+   The <link> preconnect in head.html is more performant; keep both. */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+
+/* ================================================================
+   1. CSS CUSTOM PROPERTIES (color + spacing tokens)
+   ================================================================ */
+:root {
+  /* --- Brand & UI colours --- */
+  --c-primary:        #1a6e7e;   /* deep teal — nav accents, headings, CTAs      */
+  --c-primary-hover:  #155e6e;   /* darker teal for hover states                 */
+  --c-primary-tint:   #e8f4f6;   /* very light teal — badges, hover fills        */
+
+  --c-link:           #0f6cbf;   /* classic academic blue for in-prose links     */
+  --c-link-hover:     #0a4e99;   /* darker on hover                              */
+
+  /* --- Text --- */
+  --c-text:           #111827;   /* near-black — body copy                       */
+  --c-text-muted:     #64748b;   /* dates, captions, secondary labels            */
+
+  /* --- Surfaces --- */
+  --c-bg:             #ffffff;
+  --c-bg-subtle:      #f8fafc;   /* sidebar, footer, off-white areas             */
+
+  /* --- Borders --- */
+  --c-border:         #e2e8f0;   /* light dividers                               */
+  --c-border-strong:  #94a3b8;   /* under section headings                       */
+
+  /* --- Elevation --- */
+  --shadow-sm:        0 1px 3px rgba(0,0,0,0.07), 0 1px 2px rgba(0,0,0,0.04);
+}
+
+/* Dark-mode overrides — mirrors the site's existing dark-theme colours */
+[data-theme="dark"] {
+  --c-link:         #60a5fa;
+  --c-link-hover:   #93c5fd;
+  --c-text:         var(--global-text-color);
+  --c-text-muted:   var(--global-text-color-light);
+  --c-bg:           var(--global-bg-color);
+  --c-bg-subtle:    var(--global-bg-color);
+  --c-border:       var(--global-border-color);
+  --c-border-strong:var(--global-dark-border-color);
+  --c-primary-tint: rgba(26, 110, 126, 0.15);
+}
+
+
+/* ================================================================
+   2. TYPOGRAPHY
+   ================================================================ */
+
+/* Body — slightly larger base, more open leading */
+body {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--c-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings — Lora serif for academic gravitas */
+h1, h2, h3, h4, h5, h6,
+.page__title,
+.archive__item-title {
+  font-family: 'Lora', Georgia, 'Times New Roman', serif;
+  color: var(--c-text);
+  letter-spacing: -0.01em;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  margin-top: 2.25rem;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 1.75rem;
+  margin-bottom: 0.35rem;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-top: 1.25rem;
+  margin-bottom: 0.25rem;
+  color: var(--c-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.8125rem;
+}
+
+/* Body links — understated blue, animated underline on hover */
+.page__content a,
+.archive a:not(.archive__item-title a):not(.btn) {
+  color: var(--c-link);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+
+  &:hover {
+    color: var(--c-link-hover);
+    border-bottom-color: var(--c-link-hover);
+  }
+}
+
+/* Publication / talk titles — brand teal, no underline by default */
+.archive__item-title a {
+  color: var(--c-primary);
+  text-decoration: none;
+  border-bottom: none;
+
+  &:hover {
+    color: var(--c-primary-hover);
+    text-decoration: underline;
+  }
+}
+
+/* Sidebar author links */
+.author__urls a {
+  color: var(--c-text);
+  font-size: 0.875rem;
+
+  &:hover {
+    color: var(--c-primary);
+    text-decoration: none;
+  }
+}
+
+/* Paragraph spacing */
+p {
+  margin-bottom: 1.2em;
+}
+
+
+/* ================================================================
+   3. LAYOUT AND SPACING
+   ================================================================ */
+
+/* Smooth background */
+html, body {
+  background-color: var(--c-bg);
+}
+
+#main {
+  margin-top: 2.5em;
+}
+
+/* Prose pages: cap line length at ~70 chars for comfortable reading */
+.page__content {
+  max-width: 70ch;
+}
+
+/* Archive/list pages are denser — restore full width */
+.archive,
+.archive .page__content {
+  max-width: none;
+}
+
+/* Section h2 dividers — primary colour rule instead of plain gray */
+.page__content h2 {
+  color: var(--c-primary);
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--c-primary-tint);
+  margin-bottom: 1rem;
+}
+
+/* h3 subtle left accent */
+.page__content h3 {
+  color: var(--c-primary);
+}
+
+/* Sidebar — off-white fill */
+.sidebar {
+  background-color: var(--c-bg-subtle);
+}
+
+/* Avatar ring in brand colour */
+.author__avatar img {
+  border-color: var(--c-primary) !important;
+}
+
+/* Author name weight */
+.author__name {
+  font-weight: 700;
+  color: var(--c-text);
+}
+
+/* Author bio */
+.author__bio {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--c-text-muted);
+}
+
+/* Better spacing for social icon list */
+.author__urls li {
+  margin-bottom: 0.15rem;
+}
+
+
+/* ================================================================
+   4. NAVIGATION HEADER AND FOOTER
+   ================================================================ */
+
+/* Drop shadow instead of hard 1-px border */
+.masthead {
+  box-shadow: var(--shadow-sm);
+
+  &::after {
+    display: none;             /* remove the existing hairline */
+  }
+}
+
+/* Nav links — small caps style, muted colour */
+.greedy-nav a {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--c-text-muted);
+
+  &:hover {
+    color: var(--c-primary);
+  }
+}
+
+/* Active page indicator */
+.masthead__menu-item.selected a,
+.masthead__menu-item.selected a:hover {
+  color: var(--c-primary) !important;
+  border-bottom-color: var(--c-primary) !important;
+  font-weight: 700;
+}
+
+/* Site title in nav — serif, larger, not small-caps */
+.masthead__menu-item--lg a {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem !important;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--c-text) !important;
+
+  &:hover {
+    color: var(--c-primary) !important;
+  }
+}
+
+/* Footer */
+.page__footer {
+  background-color: var(--c-bg-subtle);
+  border-top: 1px solid var(--c-border);
+  margin-top: 4em;
+}
+
+.page__footer-follow li {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.page__footer-copyright {
+  font-size: 0.75rem;
+  color: var(--c-text-muted);
+  margin-top: 0.5em;
+}
+
+
+/* ================================================================
+   5. PUBLICATIONS / CV SPECIFIC TWEAKS
+   ================================================================ */
+
+/* Each publication entry: spaced, separated by a faint rule */
+.list__item {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--c-border);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+/* Publication title */
+.archive__item-title {
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+}
+
+/* Venue / year paragraph */
+.archive__item p {
+  font-size: 0.875rem;
+  color: var(--c-text-muted);
+  margin: 0.2rem 0 0;
+}
+
+/* Excerpt / abstract snippet */
+.archive__item-excerpt {
+  font-size: 0.9rem;
+  color: var(--c-text-muted);
+  line-height: 1.55;
+  margin-top: 0.35rem;
+}
+
+/* Publication category headings (Journal Articles, Conference Papers …) */
+.archive h2 {
+  font-size: 1.25rem;
+  color: var(--c-primary);
+  border-bottom: 2px solid var(--c-primary-tint);
+  padding-bottom: 0.35rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* "You can also find my articles on …" line */
+.wordwrap {
+  font-size: 0.9rem;
+  color: var(--c-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* CV section rules */
+.cv-section h2,
+.page__content > h2 {
+  color: var(--c-primary);
+}
+
+/* Download buttons */
+.btn--primary,
+a.btn--primary {
+  background-color: var(--c-primary);
+  border-color: var(--c-primary);
+  color: #fff;
+
+  &:hover {
+    background-color: var(--c-primary-hover);
+    border-color: var(--c-primary-hover);
+    color: #fff;
+  }
+}
+
+/* Citation / download links inside publication pages */
+.page__content p[style] {
+  font-size: 0.875rem;
+  color: var(--c-text-muted);
+}
+
+
+/* ================================================================
+   6. RESPONSIVE ADJUSTMENTS
+   ================================================================ */
+
+/* ---- Tablet  (≤ 900 px) ---- */
+@media (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.375rem; }
+  h3 { font-size: 1.125rem; }
+
+  .page__content {
+    max-width: none;           /* prose doesn't need 70ch cap on tablet */
+  }
+
+  #main {
+    margin-top: 2em;
+  }
+}
+
+/* ---- Mobile  (≤ 600 px) ---- */
+@media (max-width: 600px) {
+  body {
+    font-size: 15.5px;
+    line-height: 1.65;
+  }
+
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.1rem;  }
+
+  #main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 1.5em;
+  }
+
+  /* Sidebar stacks above content — tighten gap */
+  .sidebar {
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .author__avatar img {
+    max-width: 72px;
+  }
+
+  /* Publication list items */
+  .list__item {
+    padding: 0.875rem 0;
+  }
+
+  /* Tighter masthead on phones */
+  .masthead__inner-wrap {
+    padding: 0.375rem 0.875rem;
+  }
+
+  /* Footer */
+  .page__footer footer {
+    padding: 0 0.875rem 1rem;
+  }
+}
