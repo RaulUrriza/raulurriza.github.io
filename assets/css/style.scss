@@ -187,9 +187,9 @@ html, body {
   color: var(--c-primary);
 }
 
-/* Sidebar — off-white fill */
+/* Sidebar — transparent, no background fill */
 .sidebar {
-  background-color: var(--c-bg-subtle);
+  background-color: transparent;
 }
 
 /* Avatar ring in brand colour */
