@@ -168,15 +168,17 @@ html, body {
   margin-top: 2.5em;
 }
 
-/* Prose pages: cap line length at ~70 chars for comfortable reading */
-.page__content {
-  max-width: 70ch;
-}
-
-/* Archive/list pages are denser — restore full width */
+/* Unified content width across all page types */
+.page__content,
 .archive,
 .archive .page__content {
   max-width: none;
+}
+
+/* Justified body text */
+.page__content p,
+.archive p {
+  text-align: justify;
 }
 
 /* Section h2 dividers */
@@ -468,7 +470,7 @@ a.btn--primary {
   display: flex !important;
   float: none !important;
   width: 100% !important;
-  max-width: 70ch;
+  max-width: none;
   gap: 0;
 }
 
@@ -525,9 +527,6 @@ a.btn--primary {
   h2 { font-size: 1.375rem; }
   h3 { font-size: 1.125rem; }
 
-  .page__content {
-    max-width: none;           /* prose doesn't need 70ch cap on tablet */
-  }
 
   #main {
     margin-top: 2em;
