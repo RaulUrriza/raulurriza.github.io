@@ -6,17 +6,17 @@
 // "system". Default is "system".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  return (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") ? "system" : themeSetting;
+  return (themeSetting !== "dark" && themeSetting !== "light" && themeSetting !== "system") ? "system" : themeSetting;
 };
 
 // Determine the computed theme, which can be "dark" or "light". If the theme setting is
 // "system", the computed theme is determined based on the user's system preference.
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting != "system") {
+  if (themeSetting !== "system") {
     return themeSetting;
   }
-  return (userPref && userPref("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
 };
 
 // detect OS/browser preference
@@ -103,10 +103,11 @@ $(document).ready(function () {
   $('#theme-toggle').on('click', toggleTheme);
 
   // Enable the sticky footer
-  var bumpIt = function () {
+  const bumpIt = function () {
     $("body").css("padding-bottom", "0");
     $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-  }
+  };
+  let didResize = false;
   $(window).resize(function () {
     didResize = true;
   });
@@ -115,7 +116,6 @@ $(document).ready(function () {
       didResize = false;
       bumpIt();
     }}, 250);
-  var didResize = false;
   bumpIt();
 
   // FitVids init
@@ -129,7 +129,7 @@ $(document).ready(function () {
 
   // Restore the follow menu if toggled on a window resize
   jQuery(window).on('resize', function () {
-    if ($('.author__urls.social-icons').css('display') == 'none' && $(window).width() >= scssLarge) {
+    if ($('.author__urls.social-icons').css('display') === 'none' && $(window).width() >= scssLarge) {
       $(".author__urls").css('display', 'block')
     }
   });

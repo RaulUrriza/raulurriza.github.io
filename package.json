@@ -30,7 +30,11 @@
     "plotly.js-dist-min": "^3.3.0"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.3.0",
     "onchange": "^7.1.0",
+    "stylelint": "^17.11.0",
+    "stylelint-config-standard-scss": "^17.0.0",
     "uglify-js": "^3.17.4"
   },
   "scripts": {
