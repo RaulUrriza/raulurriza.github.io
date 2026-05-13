@@ -333,14 +333,21 @@ html, body {
   margin-top: 0.35rem;
 }
 
-/* Publication category headings (Journal Articles, Conference Papers …) */
-.archive h2 {
+/* Publication category headings (Journal Articles, Conference Papers …)
+   Use :not(.archive__item-title) so item titles without a link keep var(--c-text) */
+.archive h2:not(.archive__item-title) {
   font-size: 1.25rem;
-  color: var(--c-primary);
+  color: var(--c-text);
   border-bottom: 2px solid var(--c-primary-tint);
   padding-bottom: 0.35rem;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+/* Remove hover underline / pointer for titles that have no link inside */
+.archive__item:hover .archive__item-title:not(:has(a)) {
+  text-decoration: none;
+  cursor: default;
 }
 
 /* "You can also find my articles on …" line */
