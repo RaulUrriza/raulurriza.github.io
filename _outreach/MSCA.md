@@ -1,5 +1,5 @@
 ---
-title: "BE-LIGHT Project — Tomographic Microvibrography of Ocular Structures"
+title: "BE-LIGHT Project - Tomographic Microvibrography of Ocular Structures"
 excerpt: "Our work at NCU on combining OCT and optical lock-in detection for biomechanical mapping of the eye was featured by the BE-LIGHT project. [View original post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7453142601316302848)"
 collection: outreach
 date: 2024-09-03
@@ -8,7 +8,7 @@ date: 2024-09-03
 I am glad to share that our research at the [Uniwersytet Mikołaja Kopernika w Toruniu](https://www.umk.pl/) has been highlighted by the BE-LIGHT project.
 <br>
 
-Together with my supervisor Dr. Ireneusz Grulkowski and our team, we are developing a novel tomographic microvibrography system to evaluate the biomechanical properties of ocular structures — including the cornea, lens, and sclera — by combining Optical Coherence Tomography (OCT) with an optical lock-in detection scheme for high-frequency vibrometric measurements.
+Together with my supervisor Dr. Ireneusz Grulkowski and our team, we are developing a novel tomographic microvibrography system to evaluate the biomechanical properties of ocular structures - including the cornea, lens, and sclera - by combining Optical Coherence Tomography (OCT) with an optical lock-in detection scheme for high-frequency vibrometric measurements.
 <br>
 
 Understanding the mechanical behavior of the eye is essential for the early detection and management of ocular diseases. By merging advanced optical technologies with machine learning algorithms, this project aims to produce high-resolution maps of the mechanical properties of ocular tissues, paving the way for more precise diagnostics and personalized treatments in ophthalmology.
