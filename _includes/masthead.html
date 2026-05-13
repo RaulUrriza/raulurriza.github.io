@@ -11,7 +11,14 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item {% if page.url contains link.url and link.url != '/' %}selected{% endif %}">
+            {% assign is_exact = false %}
+            {% assign is_parent = false %}
+            {% if page.url == link.url %}
+              {% assign is_exact = true %}
+            {% elsif page.url contains link.url and link.url != '/' %}
+              {% assign is_parent = true %}
+            {% endif %}
+            <li class="masthead__menu-item{% if is_exact %} selected{% elsif is_parent %} active-parent{% endif %}">
               <a href="{{ domain }}{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}

@@ -179,12 +179,21 @@ html, body {
   max-width: none;
 }
 
-/* Section h2 dividers — primary colour rule instead of plain gray */
+/* Section h2 dividers */
 .page__content h2 {
-  color: var(--c-primary);
+  color: var(--c-text);
   padding-bottom: 0.35rem;
   border-bottom: 2px solid var(--c-primary-tint);
   margin-bottom: 1rem;
+}
+
+.page__content h2:first-of-type {
+  margin-top: 0;
+}
+
+/* Empty header in single layout (pages without title) */
+.page__inner-wrap > header:empty {
+  display: none;
 }
 
 /* h3 subtle left accent */
@@ -282,10 +291,18 @@ html, body {
 
 /* Active page indicator */
 .masthead__menu-item.selected a,
-.masthead__menu-item.selected a:hover {
+.masthead__menu-item.selected a:hover,
+.masthead__menu-item.active-parent a,
+.masthead__menu-item.active-parent a:hover {
   color: var(--c-primary) !important;
   border-bottom-color: var(--c-primary) !important;
   font-weight: 700;
+}
+
+/* Subpages keep the parent nav link clickable */
+.masthead__menu-item.active-parent a {
+  pointer-events: auto !important;
+  cursor: pointer !important;
 }
 
 /* Site title in nav — serif, larger, not small-caps */
@@ -389,8 +406,7 @@ html, body {
 }
 
 /* CV section rules */
-.cv-section h2,
-.page__content > h2 {
+.cv-section h2 {
   color: var(--c-primary);
 }
 
@@ -465,12 +481,17 @@ a.btn--primary {
   font-weight: 600;
   transition: background-color 0.18s ease, color 0.18s ease;
 
-  &:first-child {
+  &:first-child:last-child {
+    border-radius: 8px !important;
+    margin-left: 0 !important;
+  }
+
+  &:first-child:not(:last-child) {
     border-radius: 8px 0 0 8px !important;
     margin-left: 0 !important;
   }
 
-  &:last-child {
+  &:last-child:not(:first-child) {
     border-radius: 0 8px 8px 0 !important;
     margin-left: -2px !important;
   }

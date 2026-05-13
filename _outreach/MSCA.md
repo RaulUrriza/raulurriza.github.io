@@ -1,6 +1,6 @@
 ---
 title: "BE-LIGHT Project — Tomographic Microvibrography of Ocular Structures"
-excerpt: "Our work at NCU on combining OCT and optical lock-in detection for biomechanical mapping of the eye was featured by the BE-LIGHT project. [View original post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:...)"
+excerpt: "Our work at NCU on combining OCT and optical lock-in detection for biomechanical mapping of the eye was featured by the BE-LIGHT project. [View original post on LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7453142601316302848)"
 collection: outreach
 date: 2024-09-03
 ---
