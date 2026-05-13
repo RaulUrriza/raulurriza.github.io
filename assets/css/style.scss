@@ -180,20 +180,22 @@ html, body {
 }
 
 /* Section h2 dividers */
-.page__content h2 {
+.page__content h2,
+.page__content h1:not(.page__title) {
   color: var(--c-text);
   padding-bottom: 0.35rem;
   border-bottom: 2px solid var(--c-primary-tint);
   margin-bottom: 1rem;
 }
 
-.page__content h2:first-of-type {
-  margin-top: 0;
+/* Hide empty page title (e.g. about.md has title: "") */
+.page__title:empty {
+  display: none;
 }
 
-/* Empty header in single layout (pages without title) */
-.page__inner-wrap > header:empty {
-  display: none;
+.page__content h2:first-of-type,
+.page__content h1:first-of-type {
+  margin-top: 0;
 }
 
 /* h3 subtle left accent */
