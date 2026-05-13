@@ -168,11 +168,19 @@ html, body {
   margin-top: 2.5em;
 }
 
-/* Unified content width across all page types */
+/* Unified content width across all page types —
+   .archive lacks the suffix(2 of 12) that .page applies,
+   so we add the same padding-right to match. */
 .page__content,
 .archive,
 .archive .page__content {
   max-width: none;
+}
+
+@media (min-width: 57.8125em) {
+  .archive {
+    padding-right: 16.9491525424%;
+  }
 }
 
 /* Justified body text */

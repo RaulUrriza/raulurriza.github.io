@@ -17,7 +17,7 @@ I hold an M.Sc. in Biomedical Engineering and a B.S. in Optics and Optometry, bo
 
 # Current research
 
-I am currently a **Marie Skłodowska-Curie PhD Fellow** within the [BE-LIGHT](https://be-light.eu/) project, working under the supervision of Dr. Ireneusz Grulkowski. My research focuses on tomographic microvibrography of ocular structures — combining **Optical Coherence Tomography (OCT)** with an optical lock-in detection scheme to map the biomechanical properties of the cornea, lens, and sclera at high frequency. The goal is to produce high-resolution mechanical maps of ocular tissues, opening new avenues for early detection and personalized treatment of eye diseases.
+I am currently a **Marie Skłodowska-Curie PhD Fellow** within the [BE-LIGHT](https://belightproject.eu/) project, working under the supervision of Dr. Ireneusz Grulkowski. My research focuses on tomographic microvibrography of ocular structures — combining **Optical Coherence Tomography (OCT)** with an optical lock-in detection scheme to map the biomechanical properties of the cornea, lens, and sclera at high frequency. The goal is to produce high-resolution mechanical maps of ocular tissues, opening new avenues for early detection and personalized treatment of eye diseases.
 
 ---
 
