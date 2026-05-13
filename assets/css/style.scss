@@ -198,6 +198,11 @@ html, body {
   margin-bottom: 1rem;
 }
 
+/* Justify page titles */
+.page__title {
+  text-align: justify;
+}
+
 /* Hide empty page title (e.g. about.md has title: "") */
 .page__title:empty {
   display: none;
@@ -371,6 +376,7 @@ html, body {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.2rem;
+  text-align: justify;
 }
 
 /* Venue / year paragraph */
