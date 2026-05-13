@@ -1,16 +1,12 @@
 ---
 layout: archive
-title: "CV"
-permalink: /cv/
+title: "Resume"
+permalink: /resume/
 author_profile: true
-redirect_from:
-  - /resume
 ---
 
 {% include base_path %}
 
-Professional Profile
-======
 With a solid foundation in Physics, Biomedical Engineering and Optometry, I have consistently excelled in creating innovative technological solutions for eye health. My interdisciplinary expertise, merging advanced optical technologies with specialized biomedical engineering tools in information and communication, has enabled me to address complex medical challenges with a distinctive and effective approach. My experience encompasses both academic research and practical applications, driving progress in some different optical diagnostic systems.
 * Expert in the implementation and development of advanced optical interferometry methods for ocular tissue analysis.
 * Proven ability in the integration of medical diagnostic systems with artificial intelligence and machine learning technologies.

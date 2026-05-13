@@ -159,6 +159,11 @@ html, body {
   background-color: var(--c-bg);
 }
 
+/* Keep footer from floating up on sparse pages */
+#main {
+  min-height: 65vh;
+}
+
 #main {
   margin-top: 2.5em;
 }
@@ -214,6 +219,16 @@ html, body {
 .author__name {
   font-weight: 700;
   color: var(--c-text);
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      color: var(--c-primary);
+    }
+  }
 }
 
 /* Author bio */
@@ -240,6 +255,16 @@ html, body {
   &::after {
     display: none;             /* remove the existing hairline */
   }
+}
+
+/* Center nav links with equal spacing between items */
+.greedy-nav .visible-links {
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.greedy-nav .visible-links li {
+  flex: 0 0 auto;
 }
 
 /* Nav links — small caps style, muted colour */
@@ -315,6 +340,7 @@ html, body {
 .archive__item-title {
   font-size: 1.05rem;
   line-height: 1.4;
+  margin-top: 0;
   margin-bottom: 0.2rem;
 }
 
@@ -331,6 +357,11 @@ html, body {
   color: var(--c-text-muted);
   line-height: 1.55;
   margin-top: 0.35rem;
+}
+
+/* Hide the <hr> after category headings — the heading border-bottom already serves as divider */
+.archive hr {
+  display: none;
 }
 
 /* Publication category headings (Journal Articles, Conference Papers …)
@@ -405,6 +436,7 @@ a.btn--primary {
 .contact-card:focus-visible,
 .contact-card:active {
   outline: none !important;
+  border-bottom-color: transparent !important;
   transform: scale(1.025);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.10);
 }
