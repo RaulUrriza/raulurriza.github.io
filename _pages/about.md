@@ -51,4 +51,4 @@ Before joining academia full-time, I worked as an Optician and Optometrist at AF
 
 # Contact
 
-I am always open to scientific collaborations, discussions, or simply connecting with fellow researchers. Feel free to reach out through the [contact page](/contact/) or find me on [LinkedIn](https://www.linkedin.com/in/raulurriza).
+I am always open to scientific collaborations, discussions, or simply connecting with fellow researchers. Feel free to reach out through the [contact page](/contact/) or find me on [LinkedIn](https://www.linkedin.com/in/ra%C3%BAlurrizaarpal/).
