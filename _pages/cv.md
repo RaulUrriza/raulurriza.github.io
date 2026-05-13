@@ -25,7 +25,7 @@ Education
 
 Work experience
 ======
-* September 2024 – Present: Research Assistant | Marie Skłodowska-Curie PhD Fellow
+* September 2024 – Present: Research Assistant & Marie Skłodowska-Curie PhD Fellow
   * Nicolaus Copernicus University, Toruń, Poland
   * BE-LIGHT project (MSCA Fellowship). Research combining advanced optical imaging techniques with AI-driven analysis.
 
@@ -43,12 +43,16 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Optical Design
+  * OSLO
+  * Zemax
+* Mechanical Design
+  * Solidworks
+* Software development
+  * Python
+  * MatLab
+  * Frontend (HTML, css, JavaScript) and Backend (PHP, MySQL)
+* Machine learning aplications
 
 Publications
 ======
@@ -68,6 +72,8 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Service and leadership
+Lenguages
 ======
-* Currently signed in to 43 different slack teams
+* Spanish: Native
+* English: Professional
+* Polish: Basic
