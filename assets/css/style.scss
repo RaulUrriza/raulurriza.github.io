@@ -443,7 +443,53 @@ a.btn--primary {
 
 
 /* ================================================================
-   7. RESPONSIVE ADJUSTMENTS
+   7. PAGINATION BUTTONS (Previous / Next)
+   ================================================================ */
+
+.pagination {
+  display: flex !important;
+  float: none !important;
+  width: 100% !important;
+  max-width: 70ch;
+  gap: 0;
+}
+
+.pagination--pager {
+  flex: 1 1 0 !important;
+  width: auto !important;
+  float: none !important;
+  padding: 1em 2em !important;
+  text-align: center;
+  color: var(--c-primary) !important;
+  border: 2px solid var(--c-primary) !important;
+  font-weight: 600;
+  transition: background-color 0.18s ease, color 0.18s ease;
+
+  &:first-child {
+    border-radius: 8px 0 0 8px !important;
+    margin-left: 0 !important;
+  }
+
+  &:last-child {
+    border-radius: 0 8px 8px 0 !important;
+    margin-left: -2px !important;
+  }
+
+  &:hover {
+    background-color: var(--c-primary) !important;
+    color: #fff !important;
+  }
+
+  &.disabled {
+    color: var(--c-border-strong) !important;
+    border-color: var(--c-border) !important;
+    background-color: transparent !important;
+  }
+}
+
+
+/* ================================================================
+   8. RESPONSIVE ADJUSTMENTS
    ================================================================ */
 
 /* ---- Tablet  (≤ 900 px) ---- */

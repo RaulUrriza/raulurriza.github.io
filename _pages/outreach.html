@@ -8,7 +8,8 @@ author_profile: true
 {% include base_path %}
 
 
-{% for post in site.outreach %}
+{% assign sorted_outreach = site.outreach | sort: "date" | reverse %}
+{% for post in sorted_outreach %}
   {% include archive-single.html %}
 {% endfor %}
 
