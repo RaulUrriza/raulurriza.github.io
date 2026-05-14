@@ -25,12 +25,19 @@
   border-top: 1px solid var(--global-dark-border-color);
 
   footer {
-    @include clearfix;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
     max-width: 100%;
     padding: 0 1em 1em;
+
+    &::after {
+      display: none; /* disable clearfix float hack inside flex container */
+    }
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -54,16 +61,16 @@
   }
 }
 
+.page__footer-content {
+  flex: 1;
+}
+
 .page__footer-copyright {
   font-family: $global-font-family;
   font-size: $type-size-7;
 }
 
 .page__footer-follow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   ul {
     margin: 0;
     padding: 0;
@@ -99,13 +106,13 @@
 .page__footer-logo {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  padding-left: 2em;
+  flex-shrink: 0;
 
   svg {
-    height: 1.5em;
-    width: 1.5em;
+    height: 100%;
+    width: auto;
     fill: currentColor;
-    vertical-align: middle;
     transition: opacity 0.2s ease;
   }
 
