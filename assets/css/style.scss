@@ -277,12 +277,12 @@ html, body {
 
 /* Center nav links with equal spacing between items */
 .greedy-nav .visible-links {
-  justify-content: center;
-  gap: 0.5rem;
+  justify-content: space-between;
 }
 
 .greedy-nav .visible-links li {
-  flex: 0 0 auto;
+  flex: 1;
+  justify-content: center;
 }
 
 /* Nav links — small caps style, muted colour */
