@@ -60,6 +60,10 @@
 }
 
 .page__footer-follow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   ul {
     margin: 0;
     padding: 0;
@@ -88,6 +92,28 @@
   .social-icons {
     a {
       white-space: nowrap;
+    }
+  }
+}
+
+.page__footer-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+
+  svg {
+    height: 1.5em;
+    width: 1.5em;
+    fill: currentColor;
+    vertical-align: middle;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    svg {
+      opacity: 0.7;
     }
   }
 }
