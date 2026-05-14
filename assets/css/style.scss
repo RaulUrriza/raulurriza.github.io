@@ -281,8 +281,7 @@ html, body {
 }
 
 .greedy-nav .visible-links li {
-  flex: 1;
-  justify-content: center;
+  flex: 0 0 auto;
 }
 
 /* Nav links — small caps style, muted colour */
