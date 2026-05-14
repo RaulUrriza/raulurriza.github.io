@@ -29,15 +29,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-    max-width: 100%;
+    width: 100%;
+    max-width: $x-large;
     padding: 0 1em 1em;
 
     &::after {
       display: none;
-    }
-
-    @include breakpoint($x-large) {
-      max-width: $x-large;
     }
   }
 
@@ -103,7 +100,7 @@
 .page__footer-logo {
   display: flex;
   align-items: center;
-  margin-left: 3em;
+  margin-left: auto;
   flex-shrink: 0;
 
   svg {
