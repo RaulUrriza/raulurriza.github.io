@@ -27,19 +27,14 @@
     display: flex;
     align-items: center;
     margin-top: 1em;
-    padding: 0 1em 1em 1em;
+    padding: 0 1em 1em;
 
     &::after {
       display: none;
     }
 
-    @include breakpoint($large) {
-      padding-right: 167px;
-    }
-
     @include breakpoint($x-large) {
       max-width: $x-large;
-      padding-right: 227px;
     }
   }
 
