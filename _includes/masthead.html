@@ -3,6 +3,9 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
+        <a href="{{ base_path }}/" class="site-logo" aria-label="Home">
+          <img src="{{ base_path }}/images/favicon.svg" alt="{{ site.title }}" />
+        </a>
         <button class="hidden" aria-label="Toggle menu" aria-expanded="false"><span class="navicon"></span></button>
         <ul class="visible-links">
 {% for link in site.data.navigation.main %}

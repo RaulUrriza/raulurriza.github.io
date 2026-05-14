@@ -54,6 +54,24 @@
   }
 }
 
+.site-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5em;
+  flex-shrink: 0;
+
+  img {
+    height: 28px;
+    width: auto;
+    display: block;
+    transition: opacity 0.2s ease;
+  }
+
+  &:hover img {
+    opacity: 0.75;
+  }
+}
+
 .masthead__menu-item {
   background-color: var(--global-bg-color);
   display: block;
