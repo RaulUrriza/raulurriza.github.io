@@ -103,7 +103,6 @@
 }
 
 .page__footer-logo {
-  align-self: stretch;
   display: flex;
   align-items: center;
   padding-left: 2em;
@@ -111,9 +110,8 @@
 
   svg {
     display: block;
-    align-self: stretch;
-    aspect-ratio: 1 / 1;
-    width: auto;
+    height: 75px;
+    width: 75px;
     fill: currentColor;
     transition: opacity 0.2s ease;
   }
