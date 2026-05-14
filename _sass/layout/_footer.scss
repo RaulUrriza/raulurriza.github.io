@@ -13,9 +13,7 @@
   width: 100%;
   clear: both;
 
-  /* keep footer in normal document flow so custom widgets do not overlap content */
   height: auto;
-
   margin-top: 3em;
 
   -webkit-animation: intro 0.3s both;
@@ -36,7 +34,7 @@
     padding: 0 1em 1em;
 
     &::after {
-      display: none; /* disable clearfix float hack inside flex container */
+      display: none;
     }
 
     @include breakpoint($x-large) {
@@ -61,8 +59,9 @@
   }
 }
 
-.page__footer-content {
+.page__footer-left {
   flex: 1;
+  min-width: 0;
 }
 
 .page__footer-copyright {
@@ -110,6 +109,7 @@
   flex-shrink: 0;
 
   svg {
+    display: block;
     height: 100%;
     width: auto;
     fill: currentColor;
