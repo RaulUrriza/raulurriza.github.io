@@ -5,6 +5,11 @@
       <nav id="site-nav" class="greedy-nav">
         <button class="hidden" aria-label="Toggle menu" aria-expanded="false"><span class="navicon"></span></button>
         <ul class="visible-links">
+          <li class="masthead__menu-item site-logo-item">
+            <a href="{{ base_path }}/" aria-label="Home">
+              <img src="{{ base_path }}/images/favicon.svg" alt="{{ site.title }}" class="site-logo-img" />
+            </a>
+          </li>
 {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
