@@ -11,12 +11,14 @@ I was honored to take home the first prize from Afflelou Challenge.
 That trip to Madrid was such a vibe-meeting the team and talking through big ideas with the staff was an unforgettable experience. Here is the first short interview I did in my career-a snapshot of a younger me right after winning this prize.
 <br> 
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6915538307959410688" 
-  height="950" 
-  width="100%" 
-  frameborder="0" 
-  allowfullscreen="" 
-  title="Publicación integrada">
-</iframe>
+<div style="position:relative;height:950px;overflow:hidden;">
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6915538307959410688"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen=""
+    title="Publicación integrada">
+  </iframe>
+</div>
 
 

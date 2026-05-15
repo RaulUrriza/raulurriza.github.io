@@ -14,10 +14,12 @@ Together with my supervisor Dr. Ireneusz Grulkowski and our team, we are develop
 Understanding the mechanical behavior of the eye is essential for the early detection and management of ocular diseases. By merging advanced optical technologies with machine learning algorithms, this project aims to produce high-resolution maps of the mechanical properties of ocular tissues, paving the way for more precise diagnostics and personalized treatments in ophthalmology.
 <br>
 
-<iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7453078515102470145" 
-  height="1250" 
-  width="100%" 
-  frameborder="0" 
-  allowfullscreen="" 
-  title="Publicación integrada">
-</iframe>
+<div style="position:relative;height:1250px;overflow:hidden;">
+  <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7453078515102470145"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    frameborder="0"
+    scrolling="no"
+    allowfullscreen=""
+    title="Publicación integrada">
+  </iframe>
+</div>
