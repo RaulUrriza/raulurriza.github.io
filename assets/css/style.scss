@@ -225,6 +225,9 @@ html, body {
   .sidebar {
     background-color: var(--c-bg-subtle);
     box-shadow: -100vw 0 0 100vw var(--c-bg-subtle);
+    overflow-x: hidden;
+    padding-right: 0.75rem;
+    box-sizing: border-box;
   }
 }
 
@@ -259,6 +262,13 @@ html, body {
 /* Better spacing for social icon list */
 .author__urls li {
   margin-bottom: 0.15rem;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Avatar shrinks to fit sidebar width */
+.author__avatar img {
+  max-width: 100%;
 }
 
 
