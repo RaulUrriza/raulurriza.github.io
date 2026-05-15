@@ -23,7 +23,7 @@ repository               : "raulurriza.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "Foto_Perfil.jpeg"
   name             : "Raúl Urriza Arpal"
   pronouns         : # example: "she/her"  
   bio              : "MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"

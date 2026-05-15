@@ -243,9 +243,11 @@ body {
   }
 }
 
-/* Avatar ring in brand colour */
+/* Avatar — square with rounded corners, brand-colour border */
 .author__avatar img {
+  border-radius: 10px !important;
   border-color: var(--c-primary) !important;
+  max-width: 100%;
 }
 
 /* Author name weight */
