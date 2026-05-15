@@ -64,6 +64,9 @@ body {
   color: var(--c-text);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Headings — Lora serif for academic gravitas */
@@ -160,9 +163,9 @@ html, body {
   background-color: var(--c-bg);
 }
 
-/* Keep footer from floating up on sparse pages */
+/* Sticky footer — #main grows to fill all available space */
 #main {
-  min-height: 65vh;
+  flex: 1 0 auto;
 }
 
 #main {
