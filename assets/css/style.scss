@@ -66,7 +66,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 /* Headings — Lora serif for academic gravitas */
@@ -158,9 +157,15 @@ p {
    3. LAYOUT AND SPACING
    ================================================================ */
 
-/* Smooth background */
-html, body {
+/* Smooth background + sticky-footer anchor */
+html {
   background-color: var(--c-bg);
+  height: 100%;
+}
+
+body {
+  background-color: var(--c-bg);
+  min-height: 100%;
 }
 
 /* Sticky footer — #main grows to fill all available space */
