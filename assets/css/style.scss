@@ -225,14 +225,12 @@ html, body {
   .sidebar {
     background-color: var(--c-bg-subtle);
     box-shadow: -100vw 0 0 100vw var(--c-bg-subtle);
-    overflow-x: hidden;
   }
 }
 
 /* Avatar ring in brand colour */
 .author__avatar img {
   border-color: var(--c-primary) !important;
-  max-width: 100%;
 }
 
 /* Author name weight */

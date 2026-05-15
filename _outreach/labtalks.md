@@ -1,5 +1,5 @@
 ---
-title: "LabTalks S1E6"
+title: "LabTalks S1E6 — Optics, Machine Learning, and Biomedical Engineering"
 excerpt: "I had the pleasure of joining LabTalks for Season 1 Episode 6, where I talked about my journey. I am grateful to [LabTalks](https://www.youtube.com/@LabTalksPlus) for the invitation and for the thoughtful questions that made this conversation so enjoyable."
 collection: outreach
 date: 2025-09-28
