@@ -71,11 +71,14 @@ function updateNav() {
 
 // Window listeners
 
+var _navResizeTimer;
 $(window).on('resize', function () {
-  updateNav();
+  clearTimeout(_navResizeTimer);
+  _navResizeTimer = setTimeout(updateNav, 150);
 });
 screen.orientation.addEventListener("change", function () {
-  updateNav();
+  clearTimeout(_navResizeTimer);
+  _navResizeTimer = setTimeout(updateNav, 150);
 });
 
 $btn.on('click', function () {
