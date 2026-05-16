@@ -283,20 +283,27 @@ body {
   color: var(--c-text-muted);
 }
 
-/* Better spacing for social icon list */
+/* Better spacing for social icon list (desktop) */
 .author__urls li {
   margin-bottom: 0.15rem;
   white-space: normal;
   word-break: break-word;
 }
 
-/* Mobile Follow dropdown: stays within viewport, no text clipping,
-   arrow repositioned to point at the Follow button (right-aligned) */
+/* Mobile Follow dropdown: anchored to the right, grows leftward freely,
+   items stay on one line so no text is ever clipped.
+   Arrow repositioned to point at the Follow button. */
 @media (max-width: 57.8125em) {
   .author__urls {
-    max-width: calc(100vw - 1rem);
     right: 0;
     left: auto;
+    max-width: none;
+    width: max-content;
+  }
+
+  .author__urls li {
+    white-space: nowrap;
+    word-break: normal;
   }
 
   .author__urls::before,
