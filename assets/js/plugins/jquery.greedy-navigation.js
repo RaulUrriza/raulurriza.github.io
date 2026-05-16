@@ -72,13 +72,25 @@ function updateNav() {
 // Window listeners
 
 var _navResizeTimer;
-$(window).on('resize', function () {
-  clearTimeout(_navResizeTimer);
-  _navResizeTimer = setTimeout(updateNav, 150);
-});
+
+if (window.ResizeObserver) {
+  // ResizeObserver fires after layout is complete — reliable on maximize/restore
+  var _navObserver = new ResizeObserver(function () {
+    requestAnimationFrame(updateNav);
+  });
+  _navObserver.observe($nav[0]);
+} else {
+  // Fallback: debounced resize + rAF to wait for layout
+  $(window).on('resize', function () {
+    clearTimeout(_navResizeTimer);
+    _navResizeTimer = setTimeout(function () {
+      requestAnimationFrame(updateNav);
+    }, 100);
+  });
+}
+
 screen.orientation.addEventListener("change", function () {
-  clearTimeout(_navResizeTimer);
-  _navResizeTimer = setTimeout(updateNav, 150);
+  requestAnimationFrame(updateNav);
 });
 
 $btn.on('click', function () {
