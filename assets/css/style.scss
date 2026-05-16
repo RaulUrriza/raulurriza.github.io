@@ -283,6 +283,11 @@ body {
   color: var(--c-text-muted);
 }
 
+/* Always show location and employer (theme hides them below 1024px) */
+.author__desktop {
+  display: block !important;
+}
+
 /* Better spacing for social icon list (desktop) */
 .author__urls li {
   margin-bottom: 0.15rem;
