@@ -243,11 +243,22 @@ body {
   }
 }
 
-/* Avatar — square with rounded corners, brand-colour border */
-.author__avatar img {
-  border-radius: 10px !important;
-  border-color: var(--c-primary) !important;
-  max-width: 100%;
+/* Avatar — border on the wrapper so photo corners match the border radius exactly */
+@media (min-width: 57.8125em) {
+  .author__avatar {
+    border-radius: 10px;
+    border: 2px solid var(--c-primary);
+    overflow: hidden;
+    display: block;
+  }
+
+  .author__avatar img {
+    border-radius: 0 !important;
+    border: none !important;
+    padding: 0 !important;
+    display: block;
+    max-width: 100%;
+  }
 }
 
 /* Author name weight */
