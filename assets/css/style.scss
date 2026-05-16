@@ -290,6 +290,22 @@ body {
   word-break: break-word;
 }
 
+/* Mobile Follow dropdown: stays within viewport, no text clipping,
+   arrow repositioned to point at the Follow button (right-aligned) */
+@media (max-width: 57.8125em) {
+  .author__urls {
+    max-width: calc(100vw - 1rem);
+    right: 0;
+    left: auto;
+  }
+
+  .author__urls::before,
+  .author__urls::after {
+    left: auto;
+    right: 22px;
+  }
+}
+
 /* Avatar shrinks to fit sidebar width */
 .author__avatar img {
   max-width: 100%;
