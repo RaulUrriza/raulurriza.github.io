@@ -15,7 +15,7 @@ We talked about how I ended up in this field: starting out in optometry, then pi
   <iframe
     style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
     src="https://www.youtube.com/embed/Q4rcryXLcKM"
-    title="LabTalks Season 1 Episode 6: Raul Urriza — Optics, Machine Learning, and Biomedical Engineering"
+    title="LabTalks Season 1 Episode 6: Raul Urriza"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
