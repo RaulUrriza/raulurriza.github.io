@@ -1,64 +1,56 @@
 /*
-* Greedy Navigation
-*
-* http://codepen.io/lukejacksonn/pen/PwmwWV
-*
+* Binary Navigation
+* Full menu when space allows; compact Home + theme + hamburger otherwise.
 */
 
-var $nav = $('#site-nav');
-var $btn = $('#site-nav button');
-var $vlinks = $('#site-nav .visible-links');
-var $vlinks_persist_tail = $vlinks.children("*.persist.tail");
-var $hlinks = $('#site-nav .hidden-links');
+var $nav       = $('#site-nav');
+var $vlinks    = $('#site-nav .visible-links');
+var $hlinks    = $('#site-nav .hidden-links');
+var $compact   = $('#site-nav .nav-compact');
+var $hamburger = $('#site-nav .nav-hamburger');
 
-var breaks = [];
+var _fullMenuWidth = null;
+var _compactMode   = null; // null = uninitialized
+
+function measureFullWidth() {
+  var w = 0;
+  $vlinks.children().each(function () { w += $(this).outerWidth(true); });
+  return w;
+}
+
+function setFullMode() {
+  if (_compactMode === false) return;
+  _compactMode = false;
+  $vlinks.removeClass('nav-hidden');
+  $compact.hide();
+  // Close dropdown if open
+  $hlinks.addClass('hidden');
+  $hamburger.removeClass('close').attr('aria-expanded', 'false');
+}
+
+function setCompactMode() {
+  if (_compactMode === true) return;
+  _compactMode = true;
+  $vlinks.addClass('nav-hidden');
+  $compact.show();
+}
 
 function updateNav() {
-
-  var availableSpace = $btn.hasClass('hidden') ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-  // The visible list is overflowing the nav
-  if ($vlinks.width() > availableSpace) {
-
-    while ($vlinks.width() > availableSpace && $vlinks.children("*:not(.persist)").length > 0) {
-      // Record the width of the list
-      breaks.push($vlinks.width());
-
-      // Move item to the hidden list
-      $vlinks.children("*:not(.persist)").last().prependTo($hlinks);
-
-      availableSpace = $btn.hasClass("hidden") ? $nav.width() : $nav.width() - $btn.width() - 30;
-
-      // Show the dropdown btn
-      $btn.removeClass("hidden");
-    }
-
-    // The visible list is not overflowing
-  } else {
-
-    // There is space for another item in the nav
-    while (breaks.length > 0 && availableSpace > breaks[breaks.length - 1]) {
-      // Move the item to the visible list
-      if ($vlinks_persist_tail.children().length > 0) {
-        $hlinks.children().first().insertBefore($vlinks_persist_tail);
-      } else {
-        $hlinks.children().first().appendTo($vlinks);
-      }
-      breaks.pop();
-    }
-
-    // Hide the dropdown btn if hidden list is empty
-    if (breaks.length < 1) {
-      $btn.addClass('hidden');
-      $btn.removeClass('close');
-      $hlinks.addClass('hidden');
-    }
+  // Measure natural (unconstrained) width of full menu on first call,
+  // while visible-links is still fully shown in the DOM.
+  if (_fullMenuWidth === null) {
+    _fullMenuWidth = measureFullWidth();
   }
 
-  // Keep counter updated
-  $btn.attr("count", breaks.length);
+  var available = $nav.width();
 
-  // update masthead height and the body/sidebar top padding
+  if (_fullMenuWidth <= available) {
+    setFullMode();
+  } else {
+    setCompactMode();
+  }
+
+  // Sync masthead height → body / sidebar padding-top
   var mastheadHeight = $('.masthead').height();
   $('body').css('padding-top', mastheadHeight + 'px');
   if ($(".author__urls-wrapper button").is(":visible")) {
@@ -66,23 +58,46 @@ function updateNav() {
   } else {
     $(".sidebar").css("padding-top", mastheadHeight + "px");
   }
-
 }
 
-// Window listeners
-
-$(window).on('resize', function () {
-  updateNav();
-});
+// Resize / orientation listeners
+if (window.ResizeObserver) {
+  var _navObserver = new ResizeObserver(function () {
+    requestAnimationFrame(updateNav);
+  });
+  _navObserver.observe($nav[0]);
+} else {
+  var _navResizeTimer;
+  $(window).on('resize', function () {
+    clearTimeout(_navResizeTimer);
+    _navResizeTimer = setTimeout(function () {
+      requestAnimationFrame(updateNav);
+    }, 100);
+  });
+}
 screen.orientation.addEventListener("change", function () {
-  updateNav();
+  requestAnimationFrame(updateNav);
 });
 
-$btn.on('click', function () {
+// Hamburger toggles dropdown
+$hamburger.on('click', function () {
   $hlinks.toggleClass('hidden');
   $(this).toggleClass('close');
   var expanded = $(this).attr('aria-expanded') === 'true';
   $(this).attr('aria-expanded', !expanded);
+});
+
+// Compact theme icon calls toggleTheme (defined in _main.js, same bundle)
+$('.nav-compact__theme').on('click', function () {
+  toggleTheme();
+});
+
+// Close dropdown when clicking outside the nav
+$(document).on('click', function (e) {
+  if (_compactMode && !$(e.target).closest('#site-nav').length) {
+    $hlinks.addClass('hidden');
+    $hamburger.removeClass('close').attr('aria-expanded', 'false');
+  }
 });
 
 updateNav();
