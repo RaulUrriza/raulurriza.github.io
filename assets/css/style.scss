@@ -720,7 +720,7 @@ a.btn--primary {
 .navicon {
   height: 16px; /* container spans both bars */
   background: transparent; /* no middle bar */
-  top: -3px; /* visual nudge upward (position:relative already set by theme) */
+  top: -1px; /* visual nudge upward (position:relative already set by theme) */
 }
 
 .navicon::before {
