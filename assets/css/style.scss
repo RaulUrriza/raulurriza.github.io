@@ -299,17 +299,12 @@ body {
    items stay on one line so no text is ever clipped.
    Arrow repositioned to point at the Follow button. */
 @media (max-width: 57.8125em) {
-  .author__urls-wrapper {
-    position: relative;
-    z-index: 200;
-  }
-
   .author__urls {
     right: 0;
     left: auto;
     max-width: none;
     width: max-content;
-    z-index: 200;
+    z-index: 100;
   }
 
   .author__urls li {
