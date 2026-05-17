@@ -711,3 +711,39 @@ a.btn--primary {
   cursor: pointer;
   z-index: auto;
 }
+
+/* ==========================================================================
+   2-line hamburger icon (replaces the default 3-line navicon)
+   $navicon-height = 4px, so 4*4=16px container, center at 6px
+   ========================================================================== */
+
+.navicon {
+  height: 16px; /* container spans both bars */
+  background: transparent; /* no middle bar */
+}
+
+.navicon::before {
+  top: 0;
+  bottom: auto;
+}
+
+.navicon::after {
+  top: auto;
+  bottom: 0;
+}
+
+/* On click: both bars slide to center (6px) and rotate into an X */
+.close .navicon::before,
+.close .navicon::after {
+  top: 6px; /* (16 - 4) / 2 = center of 16px container */
+  bottom: auto;
+  transform-origin: 50% 50%;
+}
+
+.close .navicon::before {
+  transform: rotate(45deg);
+}
+
+.close .navicon::after {
+  transform: rotate(-45deg);
+}
