@@ -44,7 +44,9 @@ function updateNav() {
 
   var available = $nav.width();
 
-  if (_fullMenuWidth <= available) {
+  // 50px buffer: outerWidth(true) misses the inner <a> margins (1rem each side)
+  // so switch to compact a bit earlier to keep the theme icon fully visible
+  if (_fullMenuWidth + 50 <= available) {
     setFullMode();
   } else {
     setCompactMode();
