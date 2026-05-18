@@ -10,12 +10,12 @@ permalink: /images/manifest.json
 	"lang": {{ site.locale | default: "en" | jsonify }},
 	"icons": [
 		{
-			"src": "/images/logofinal/Logo_Raul_Urriza_180x180.png",
+			"src": "/images/logofinaltransparent/Logo_Raul_Urriza_180x180.png",
 			"sizes": "180x180",
 			"type": "image/png"
 		},
 		{
-			"src": "/images/logofinal/Logo_Raul_Urriza_32x32.png",
+			"src": "/images/logofinaltransparent/Logo_Raul_Urriza_32x32.png",
 			"sizes": "32x32",
 			"type": "image/png"
 		}
