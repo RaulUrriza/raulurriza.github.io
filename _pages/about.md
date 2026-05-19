@@ -92,12 +92,17 @@ document.addEventListener('DOMContentLoaded', function () {
   radios.forEach(function (r, i) { if (r.checked) current = -(i * step); });
   wheel.style.transform = 'rotate(' + current + 'deg)';
 
+  // Prevent browser from scrolling to the focused radio on click
+  radios.forEach(function (r) { r.setAttribute('tabindex', '-1'); });
+
   radios.forEach(function (radio, idx) {
     radio.addEventListener('change', function () {
       if (!this.checked) return;
+      var savedY = window.scrollY;
       var target = -(idx * step);
       current += shortestDiff(current, target);
       wheel.style.transform = 'rotate(' + current + 'deg)';
+      requestAnimationFrame(function () { window.scrollTo(0, savedY); });
     });
   });
 });
