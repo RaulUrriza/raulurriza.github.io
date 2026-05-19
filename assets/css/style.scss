@@ -784,39 +784,6 @@ a.btn--primary {
   margin: 2rem 0 3rem;
 }
 
-/* ── Fixed navigation row (always visible) ───────────────────── */
-.tl-nav {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 2.5rem;
-  z-index: 10;
-  white-space: nowrap;
-}
-
-.tl-nav > label {
-  cursor: pointer;
-  color: var(--tl-muted);
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 0.2rem 0;
-  border-bottom: 2px solid transparent;
-  transition: color var(--tl-dur) ease-in-out, border-color var(--tl-dur) ease-in-out;
-}
-
-.tl-nav > label:hover { color: var(--tl-active); }
-
-.tl-wrap:has(#tl-0:checked) .tl-nav > label:nth-child(1),
-.tl-wrap:has(#tl-1:checked) .tl-nav > label:nth-child(2),
-.tl-wrap:has(#tl-2:checked) .tl-nav > label:nth-child(3),
-.tl-wrap:has(#tl-3:checked) .tl-nav > label:nth-child(4) {
-  color: var(--tl-active);
-  border-bottom-color: var(--tl-active);
-}
-
 /* hide radio buttons visually but keep them functional */
 .tl-wrap input[type="radio"] {
   position: absolute;
