@@ -888,10 +888,11 @@ a.btn--primary {
   /* horizontal centering + vertical slide-in composed in one transform */
   transform: translate(-50%, var(--tl-body-y));
   width: 92%;
-  max-width: 700px;
+  max-width: 560px;
   display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   opacity: var(--tl-body-op);
   transition:
     opacity   var(--tl-dur) ease-in-out var(--tl-body-del),
@@ -900,28 +901,29 @@ a.btn--primary {
 }
 
 .tl-body > img {
-  width: 35%;
-  max-width: 185px;
+  width: 100%;
+  max-width: 260px;
   border-radius: 8px;
-  flex-shrink: 0;
   object-fit: cover;
 }
 
 .tl-body > .tl-text {
-  flex: 1;
-  min-width: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .tl-body > .tl-text > h3 {
-  margin-top: 0.15rem;
-  margin-bottom: 0.45rem;
+  margin-top: 0;
+  margin-bottom: 0.4rem;
   font-size: 1.05rem;
+  text-align: center;
 }
 
 .tl-body > .tl-text > p {
   margin: 0;
   font-size: 0.88rem;
   line-height: 1.65;
+  text-align: center;
 }
 
 /* ── Active item: show content, extend line ──────────────────── */
