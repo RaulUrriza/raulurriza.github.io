@@ -780,7 +780,9 @@ a.btn--primary {
   position: relative;
   width: 100%;
   height: calc(var(--tl-arc-top) + var(--tl-radius));
-  overflow: hidden;
+  overflow: visible;
+  /* clip only the bottom half; allow labels to extend horizontally */
+  clip-path: inset(0 -100vw 0 -100vw);
   margin: 2rem 0 3rem;
 }
 
