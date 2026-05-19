@@ -59,7 +59,7 @@ I am always open to scientific collaborations, discussions, or simply connecting
   <ul class="tl-wheel">
 
     <li style="--i:0;">
-      <input type="radio" id="tl-0" name="tl" checked>
+      <input type="radio" id="tl-0" name="tl">
       <label for="tl-0">2017&#8211;21</label>
       <div class="tl-body">
         <div class="tl-text">
@@ -91,7 +91,7 @@ I am always open to scientific collaborations, discussions, or simply connecting
     </li>
 
     <li style="--i:3;">
-      <input type="radio" id="tl-3" name="tl">
+      <input type="radio" id="tl-3" name="tl" checked>
       <label for="tl-3">2024&#8211;27</label>
       <div class="tl-body">
         <div class="tl-text">
