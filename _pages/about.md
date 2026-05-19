@@ -56,6 +56,11 @@ I am always open to scientific collaborations, discussions, or simply connecting
 # My journey
 
 <div class="tl-wrap">
+  <nav class="tl-nav">
+    <label for="tl-0">2021–22</label>
+    <label for="tl-1">2022–24</label>
+    <label for="tl-2">2024–27</label>
+  </nav>
   <ul class="tl-wheel">
 
     <li style="--i:0;">
