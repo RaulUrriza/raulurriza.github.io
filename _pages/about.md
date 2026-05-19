@@ -85,8 +85,8 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <div class="tl-body">
         <div class="tl-text">
           <p>During my MSc in Biomedical Engineering, I won the Afflelou Challenge, a competition about excellence at the bachelor's level where I received first prize thanks to my work on the development of a telematic system for visual health in rural areas. I worked at this company until 2024.</p>
+          <p><img src="/images/timeline/Afflelouchallenge.jpg" alt="Afflelou Challenge"></p>
         </div>
-        <img src="/images/timeline/Afflelouchallenge.jpg" alt="Afflelou Challenge">
       </div>
     </li>
 
@@ -96,8 +96,8 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <div class="tl-body">
         <div class="tl-text">
           <p>In 2024, I received the prestigious MSCA grant at Nicolaus Copernicus University for the <a href="https://belightproject.eu/">BELIGHT project</a>. During this time, I am working on my PhD, focused on the measurement of biomechanical properties of the cornea using optical coherence elastography.</p>
+          <p><img src="/images/timeline/MSCA.jpg" alt="Marie Skłodowska-Curie Fellowship"></p>
         </div>
-        <img src="/images/timeline/MSCA.jpg" alt="Marie Skłodowska-Curie Fellowship">
       </div>
     </li>
 
@@ -106,7 +106,7 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <label for="tl-4">2027&#8211;</label>
       <div class="tl-body">
         <div class="tl-text">
-          <p>I am always open to hearing about new opportunities for the future. If you would like to connect or collaborate, feel free to <a href="mailto:raulurrizaarpal@gmail.com">get in touch</a>.</p>
+          <p>I am always open to hearing about new opportunities for the future. If you would like to connect or collaborate, feel free to <a href="mailto:raul.urriza@umk.pl">get in touch</a>.</p>
         </div>
       </div>
     </li>
