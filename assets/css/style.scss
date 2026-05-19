@@ -943,26 +943,23 @@ a.btn--primary {
 /* ── Responsive ──────────────────────────────────────────────── */
 @media (max-width: 700px) {
   .tl-wrap {
-    --tl-radius:  260px;
-    --tl-arc-top: 80px;
-  }
-  .tl-body > img {
-    width: 38%;
-    max-width: 130px;
+    --tl-radius:  240px;
+    --tl-arc-top: 70px;
+    /* extra height to prevent photos from being clipped at the bottom */
+    height: calc(var(--tl-arc-top) + var(--tl-radius) + 240px);
   }
 }
 
 @media (max-width: 480px) {
   .tl-wrap {
-    --tl-radius:  190px;
-    --tl-arc-top: 65px;
+    /* smaller radius so side labels (±72°) stay within the viewport */
+    --tl-radius:  155px;
+    --tl-arc-top: 50px;
+    height: 480px;
   }
-  .tl-wheel > li > .tl-body {
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-  .tl-body > img {
-    width: 60%;
-    max-width: 160px;
+  /* shrink label text so it fits next to the arc */
+  .tl-wheel > li > label {
+    font-size: 0.68rem;
+    width: 3rem;
   }
 }
