@@ -767,7 +767,7 @@ a.btn--primary {
 
 .tl-wrap {
   --tl-radius:   380px;
-  --tl-arc-top:  60px;
+  --tl-arc-top:  100px;
   --tl-dur:      250ms;
   --tl-dot:      10px;
   --tl-line-h:   0px;
@@ -782,41 +782,6 @@ a.btn--primary {
   height: calc(var(--tl-arc-top) + var(--tl-radius));
   overflow: hidden;
   margin: 2rem 0 3rem;
-}
-
-/* ── Fixed navigation row (always visible) ───────────────────── */
-.tl-nav {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 3.5rem;
-  z-index: 10;
-}
-
-.tl-nav > label {
-  cursor: pointer;
-  color: var(--tl-muted);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 0.25rem 0;
-  border-bottom: 2px solid transparent;
-  transition: color var(--tl-dur) ease-in-out, border-color var(--tl-dur) ease-in-out;
-  white-space: nowrap;
-}
-
-.tl-nav > label:hover {
-  color: var(--tl-active);
-}
-
-/* Highlight active nav label via :has() */
-.tl-wrap:has(#tl-0:checked) .tl-nav > label:nth-child(1),
-.tl-wrap:has(#tl-1:checked) .tl-nav > label:nth-child(2),
-.tl-wrap:has(#tl-2:checked) .tl-nav > label:nth-child(3) {
-  color: var(--tl-active);
-  border-bottom-color: var(--tl-active);
 }
 
 /* hide radio buttons visually but keep them functional */
