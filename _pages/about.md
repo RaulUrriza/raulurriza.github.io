@@ -60,19 +60,28 @@ I am always open to scientific collaborations, discussions, or simply connecting
 
     <li style="--i:0;">
       <input type="radio" id="tl-0" name="tl" checked>
-      <label for="tl-0">2021–22</label>
+      <label for="tl-0">2017&#8211;21</label>
       <div class="tl-body">
         <div class="tl-text">
-          <p>During my final bachelor's project, I was working in the TOL lab at the Faculty of Zaragoza. There, I studied the viability of digital holography to measure the topography of the cornea. This investigation gave me the opportunity to speak at the OPTOM 2022 conference. </p>
-          <p><img src="/images/timeline/OPTOM2022.jpg" alt="OPTOM 2022 Conference"></p>
+          <p>During this period, I completed my Bachelor's degree in Optics and Optometry at the University of Zaragoza, where I built a strong foundation in optical physics, visual science, and clinical practice.</p>
         </div>
-
       </div>
     </li>
 
     <li style="--i:1;">
       <input type="radio" id="tl-1" name="tl">
-      <label for="tl-1">2022–24</label>
+      <label for="tl-1">2021&#8211;22</label>
+      <div class="tl-body">
+        <div class="tl-text">
+          <p>During my final bachelor's project, I was working in the TOL lab at the Faculty of Zaragoza. There, I studied the viability of digital holography to measure the topography of the cornea. This investigation gave me the opportunity to speak at the OPTOM 2022 conference.</p>
+          <p><img src="/images/timeline/OPTOM2022.jpg" alt="OPTOM 2022 Conference"></p>
+        </div>
+      </div>
+    </li>
+
+    <li style="--i:2;">
+      <input type="radio" id="tl-2" name="tl">
+      <label for="tl-2">2022&#8211;24</label>
       <div class="tl-body">
         <div class="tl-text">
           <p>During my MSc in Biomedical Engineering, I won the Afflelou Challenge, a competition about excellence at the bachelor's level where I received first prize thanks to my work on the development of a telematic system for visual health in rural areas. I worked at this company until 2024.</p>
@@ -81,9 +90,9 @@ I am always open to scientific collaborations, discussions, or simply connecting
       </div>
     </li>
 
-    <li style="--i:2;">
-      <input type="radio" id="tl-2" name="tl">
-      <label for="tl-2">2024&#8211;27</label>
+    <li style="--i:3;">
+      <input type="radio" id="tl-3" name="tl">
+      <label for="tl-3">2024&#8211;27</label>
       <div class="tl-body">
         <div class="tl-text">
           <p>In 2024, I received the prestigious MSCA grant at Nicolaus Copernicus University for the <a href="https://belightproject.eu/">BELIGHT project</a>. During this time, I am working on my PhD, focused on the measurement of biomechanical properties of the cornea using optical coherence elastography.</p>
@@ -92,9 +101,9 @@ I am always open to scientific collaborations, discussions, or simply connecting
       </div>
     </li>
 
-    <li style="--i:3;">
-      <input type="radio" id="tl-3" name="tl">
-      <label for="tl-3">2027&#8211;</label>
+    <li style="--i:4;">
+      <input type="radio" id="tl-4" name="tl">
+      <label for="tl-4">2027&#8211;</label>
       <div class="tl-body">
         <div class="tl-text">
           <p>I am always open to hearing about new opportunities for the future. If you would like to connect or collaborate, feel free to <a href="mailto:raulurrizaarpal@gmail.com">get in touch</a>.</p>

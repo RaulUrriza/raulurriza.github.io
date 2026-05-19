@@ -812,11 +812,12 @@ a.btn--primary {
   transition: transform calc(var(--tl-dur) * 1.5) ease-in-out var(--tl-dur);
 }
 
-/* rotate to selected item (index * -90deg for 4 items) */
+/* rotate to selected item (index * -72deg for 5 items) */
 .tl-wheel:has(li:nth-child(1) > input:checked) { transform: rotate(0deg);    }
-.tl-wheel:has(li:nth-child(2) > input:checked) { transform: rotate(-90deg);  }
-.tl-wheel:has(li:nth-child(3) > input:checked) { transform: rotate(-180deg); }
-.tl-wheel:has(li:nth-child(4) > input:checked) { transform: rotate(-270deg); }
+.tl-wheel:has(li:nth-child(2) > input:checked) { transform: rotate(-72deg);  }
+.tl-wheel:has(li:nth-child(3) > input:checked) { transform: rotate(-144deg); }
+.tl-wheel:has(li:nth-child(4) > input:checked) { transform: rotate(-216deg); }
+.tl-wheel:has(li:nth-child(5) > input:checked) { transform: rotate(-288deg); }
 
 /* ── Each spoke ──────────────────────────────────────────────── */
 .tl-wheel > li {
@@ -826,7 +827,7 @@ a.btn--primary {
   padding: 0;
   list-style: none;
   transform-origin: center;
-  transform: rotate(calc(var(--i) * 90deg));
+  transform: rotate(calc(var(--i) * 72deg));
   pointer-events: none;
 }
 
