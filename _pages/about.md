@@ -63,7 +63,6 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <label for="tl-0">2021–22</label>
       <div class="tl-body">
         <div class="tl-text">
-          <h3>2021–2022</h3>
           <p>During my final bachelor's project, I was working in the TOL lab at the Faculty of Zaragoza. There, I studied the viability of digital holography to measure the topography of the cornea. This investigation gave me the opportunity to speak at the OPTOM 2022 conference.</p>
         </div>
         <img src="/images/timeline/OPTOM2022.jpg" alt="OPTOM 2022 Conference">
@@ -75,7 +74,6 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <label for="tl-1">2022–24</label>
       <div class="tl-body">
         <div class="tl-text">
-          <h3>2022–2024</h3>
           <p>During my MSc in Biomedical Engineering, I won the Afflelou Challenge, a competition about excellence at the bachelor's level where I received first prize thanks to my work on the development of a telematic system for visual health in rural areas. I worked at this company until 2024.</p>
         </div>
         <img src="/images/timeline/Afflelouchallenge.jpg" alt="Afflelou Challenge">
@@ -87,7 +85,6 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <label for="tl-2">2024–27</label>
       <div class="tl-body">
         <div class="tl-text">
-          <h3>2024–2027</h3>
           <p>In 2024, I received the prestigious MSCA grant at Nicolaus Copernicus University for the <a href="https://belightproject.eu/">BELIGHT project</a>. During this time, I am working on my PhD, focused on the measurement of biomechanical properties of the cornea using optical coherence elastography.</p>
         </div>
         <img src="/images/timeline/MSCA.jpg" alt="Marie Skłodowska-Curie Fellowship">
