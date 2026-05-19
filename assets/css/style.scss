@@ -748,3 +748,215 @@ a.btn--primary {
 .close .navicon::after {
   transform: rotate(-45deg);
 }
+
+/* ================================================================
+   WHEEL TIMELINE  (About page – My journey section)
+   Adapted from CodePen cbolson/vEBWwxL – 3-item circular selector.
+   Each li is a spoke on an invisible wheel; clicking a label rotates
+   the wheel so that item rises to the top, revealing its content.
+   ================================================================ */
+
+:root {
+  --tl-active:   #1a6e7e;   /* matches --c-primary */
+  --tl-muted:    #888;
+}
+[data-theme="dark"] {
+  --tl-active:   #4db8c8;   /* lighter teal readable on dark bg */
+  --tl-muted:    #aaa;
+}
+
+.tl-wrap {
+  --tl-radius:   380px;
+  --tl-arc-top:  100px;
+  --tl-dur:      250ms;
+  --tl-dot:      10px;
+  --tl-line-h:   0px;
+  --tl-line-on:  2.5rem;
+  --tl-line-del: 0ms;
+  --tl-body-op:  0;
+  --tl-body-y:   12px;
+  --tl-body-del: 0ms;
+
+  position: relative;
+  width: 100%;
+  height: calc(var(--tl-arc-top) + var(--tl-radius));
+  overflow: hidden;
+  margin: 2rem 0 3rem;
+}
+
+/* hide radio buttons visually but keep them functional */
+.tl-wrap input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* ── The rotating circle ─────────────────────────────────────── */
+.tl-wheel {
+  position: absolute;
+  left: calc(50% - var(--tl-radius));
+  top: var(--tl-arc-top);
+  width: calc(var(--tl-radius) * 2);
+  height: calc(var(--tl-radius) * 2);
+  border-radius: 50%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transform-origin: center center;
+  transition: transform calc(var(--tl-dur) * 1.5) ease-in-out var(--tl-dur);
+}
+
+/* rotate to selected item (index * -120deg for 3 items) */
+.tl-wheel:has(li:nth-child(1) > input:checked) { transform: rotate(0deg);    }
+.tl-wheel:has(li:nth-child(2) > input:checked) { transform: rotate(-120deg); }
+.tl-wheel:has(li:nth-child(3) > input:checked) { transform: rotate(-240deg); }
+
+/* ── Each spoke ──────────────────────────────────────────────── */
+.tl-wheel > li {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transform-origin: center;
+  transform: rotate(calc(var(--i) * 120deg));
+  pointer-events: none;
+}
+
+/* ── Year label at the top of the perimeter ─────────────────── */
+.tl-wheel > li > label {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 5rem;
+  height: 1.3rem;
+  /* shift to just above the circle's top edge */
+  transform: translateY(calc(var(--tl-radius) * -1 - 1.3rem));
+  cursor: pointer;
+  pointer-events: initial;
+  text-align: center;
+  color: var(--tl-muted);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  transition: color var(--tl-dur) ease-in-out;
+}
+
+/* dot between label text and connecting line */
+.tl-wheel > li > label::before {
+  content: '';
+  position: absolute;
+  bottom: -0.55rem;
+  left: 50%;
+  translate: -50% 0;
+  width: var(--tl-dot);
+  height: var(--tl-dot);
+  border-radius: 50%;
+  background-color: currentColor;
+  transition: background-color var(--tl-dur) ease-in-out;
+}
+
+/* vertical connecting line */
+.tl-wheel > li > label::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% 0.65rem;
+  width: 2px;
+  height: var(--tl-line-h);
+  background-color: var(--tl-active);
+  transition: height 300ms ease-in-out var(--tl-line-del);
+}
+
+.tl-wheel > li > label:hover {
+  color: var(--tl-active);
+}
+
+/* ── Content block (image + text) ───────────────────────────── */
+.tl-wheel > li > .tl-body {
+  position: absolute;
+  /* 3.5rem below circle's top edge (= below the label + line) */
+  top: 3.5rem;
+  left: 50%;
+  /* horizontal centering + vertical slide-in composed in one transform */
+  transform: translate(-50%, var(--tl-body-y));
+  width: 92%;
+  max-width: 700px;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  opacity: var(--tl-body-op);
+  transition:
+    opacity   var(--tl-dur) ease-in-out var(--tl-body-del),
+    transform var(--tl-dur) ease-in-out var(--tl-body-del);
+  pointer-events: none;
+}
+
+.tl-body > img {
+  width: 35%;
+  max-width: 185px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.tl-body > .tl-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.tl-body > .tl-text > h3 {
+  margin-top: 0.15rem;
+  margin-bottom: 0.45rem;
+  font-size: 1.05rem;
+}
+
+.tl-body > .tl-text > p {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.65;
+}
+
+/* ── Active item: show content, extend line ──────────────────── */
+.tl-wheel > li:has(input:checked) {
+  --tl-body-op:  1;
+  --tl-body-y:   0px;
+  --tl-body-del: calc(var(--tl-dur) * 3);
+  --tl-muted:    var(--tl-active);
+  --tl-line-h:   var(--tl-line-on);
+  --tl-line-del: calc(var(--tl-dur) * 2);
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+@media (max-width: 700px) {
+  .tl-wrap {
+    --tl-radius:  260px;
+    --tl-arc-top: 80px;
+  }
+  .tl-body > img {
+    width: 38%;
+    max-width: 130px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tl-wrap {
+    --tl-radius:  190px;
+    --tl-arc-top: 65px;
+  }
+  .tl-wheel > li > .tl-body {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .tl-body > img {
+    width: 60%;
+    max-width: 160px;
+  }
+}
