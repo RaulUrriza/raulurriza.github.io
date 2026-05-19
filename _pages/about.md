@@ -70,7 +70,7 @@ I am always open to scientific collaborations, discussions, or simply connecting
 
     <li style="--i:1;">
       <input type="radio" id="tl-1" name="tl">
-      <label for="tl-1">2021&#8211;22</label>
+      <label for="tl-1">2022</label>
       <div class="tl-body">
         <div class="tl-text">
           <p>During my final bachelor's project, I was working in the TOL lab at the Faculty of Zaragoza. There, I studied the viability of digital holography to measure the topography of the cornea. This investigation gave me the opportunity to speak at the OPTOM 2022 conference.</p>
@@ -81,7 +81,7 @@ I am always open to scientific collaborations, discussions, or simply connecting
 
     <li style="--i:2;">
       <input type="radio" id="tl-2" name="tl">
-      <label for="tl-2">2022&#8211;24</label>
+      <label for="tl-2">2023&#8211;24</label>
       <div class="tl-body">
         <div class="tl-text">
           <p>During my MSc in Biomedical Engineering, I won the Afflelou Challenge, a competition about excellence at the bachelor's level where I received first prize thanks to my work on the development of a telematic system for visual health in rural areas. I worked at this company until 2024.</p>
