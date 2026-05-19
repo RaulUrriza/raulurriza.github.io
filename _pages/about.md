@@ -113,3 +113,32 @@ I am always open to scientific collaborations, discussions, or simply connecting
 
   </ul>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var wheel = document.querySelector('.tl-wheel');
+  if (!wheel) return;
+
+  var radios = Array.from(wheel.querySelectorAll('input[type="radio"]'));
+  var step   = 360 / radios.length;   // 72° for 5 items
+  var current = 0;
+
+  function shortestDiff(from, to) {
+    var d = ((to - from) % 360 + 360) % 360;
+    return d > 180 ? d - 360 : d;
+  }
+
+  // Set initial rotation via inline style so JS owns the transform from now on
+  radios.forEach(function (r, i) { if (r.checked) current = -(i * step); });
+  wheel.style.transform = 'rotate(' + current + 'deg)';
+
+  radios.forEach(function (radio, idx) {
+    radio.addEventListener('change', function () {
+      if (!this.checked) return;
+      var target = -(idx * step);
+      current += shortestDiff(current, target);
+      wheel.style.transform = 'rotate(' + current + 'deg)';
+    });
+  });
+});
+</script>
