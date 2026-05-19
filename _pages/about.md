@@ -56,6 +56,12 @@ I am always open to scientific collaborations, discussions, or simply connecting
 # My journey
 
 <div class="tl-wrap">
+  <nav class="tl-nav">
+    <label for="tl-0">2021&#8211;22</label>
+    <label for="tl-1">2022&#8211;24</label>
+    <label for="tl-2">2024&#8211;27</label>
+    <label for="tl-3">2027&#8211;</label>
+  </nav>
   <ul class="tl-wheel">
 
     <li style="--i:0;">
@@ -83,12 +89,22 @@ I am always open to scientific collaborations, discussions, or simply connecting
 
     <li style="--i:2;">
       <input type="radio" id="tl-2" name="tl">
-      <label for="tl-2">2024–27</label>
+      <label for="tl-2">2024&#8211;27</label>
       <div class="tl-body">
         <div class="tl-text">
           <p>In 2024, I received the prestigious MSCA grant at Nicolaus Copernicus University for the <a href="https://belightproject.eu/">BELIGHT project</a>. During this time, I am working on my PhD, focused on the measurement of biomechanical properties of the cornea using optical coherence elastography.</p>
         </div>
         <img src="/images/timeline/MSCA.jpg" alt="Marie Skłodowska-Curie Fellowship">
+      </div>
+    </li>
+
+    <li style="--i:3;">
+      <input type="radio" id="tl-3" name="tl">
+      <label for="tl-3">2027&#8211;</label>
+      <div class="tl-body">
+        <div class="tl-text">
+          <p>I am always open to hearing about new opportunities for the future. If you would like to connect or collaborate, feel free to <a href="mailto:raulurrizaarpal@gmail.com">get in touch</a>.</p>
+        </div>
       </div>
     </li>
 
