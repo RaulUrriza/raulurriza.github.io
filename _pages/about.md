@@ -11,47 +11,9 @@ redirect_from:
 
 I am Raúl Urriza Arpal, a PhD candidate in Biophysics at the [Nicolaus Copernicus University](https://www.ifiz.umk.pl/en/) in Toruń, Poland, where I am expected to complete my doctorate in 2027. My research lies at the intersection of optical engineering, biomedical imaging, and artificial intelligence, with a strong focus on developing novel diagnostic tools for eye health.
 
-My academic path began at the University of Zaragoza, where I earned a B.S. in Optics and Optometry and later an M.Sc. in Biomedical Engineering. During my final bachelor’s project, I worked in the TOL lab at the Faculty of Zaragoza, studying the viability of digital holography for measuring corneal topography. This research led to the opportunity to present my work at the <a href="#" class="img-trigger" data-src="/images/timeline/OPTOM2022.jpg" data-alt="OPTOM 2022 Conference">OPTOM 2022 conference</a>.
+My academic path began at the University of Zaragoza, where I earned a B.S. in Optics and Optometry and later an M.Sc. in Biomedical Engineering. During my final bachelor’s project, I worked in the TOL lab at the Faculty of Zaragoza, studying the viability of digital holography for measuring corneal topography. This research led to the opportunity to present my work at the OPTOM 2022 conference.
 
-During my master’s studies, I was awarded first prize in the <a href="#" class="img-trigger" data-src="/images/timeline/Afflelouchallenge.jpg" data-alt="Afflelou Challenge">Afflelou Challenge</a>, a competition recognizing excellence at the bachelor’s level, thanks to my work on the development of a telematic system for visual health in rural areas. This achievement also opened the door to my collaboration with the company, where I worked until 2024.
-
-<div id="img-modal" class="img-modal" aria-hidden="true">
-  <div class="img-modal__backdrop"></div>
-  <div class="img-modal__box">
-    <button class="img-modal__close" aria-label="Close">&times;</button>
-    <img class="img-modal__img" src="" alt="">
-  </div>
-</div>
-
-<script>
-(function () {
-  var modal   = document.getElementById(‘img-modal’);
-  var modalImg = modal.querySelector(‘.img-modal__img’);
-  var close   = modal.querySelector(‘.img-modal__close’);
-  var backdrop = modal.querySelector(‘.img-modal__backdrop’);
-
-  document.querySelectorAll(‘.img-trigger’).forEach(function (link) {
-    link.addEventListener(‘click’, function (e) {
-      e.preventDefault();
-      modalImg.src = this.dataset.src;
-      modalImg.alt = this.dataset.alt;
-      modal.classList.add(‘img-modal--open’);
-      modal.setAttribute(‘aria-hidden’, ‘false’);
-    });
-  });
-
-  function closeModal() {
-    modal.classList.remove(‘img-modal--open’);
-    modal.setAttribute(‘aria-hidden’, ‘true’);
-  }
-
-  close.addEventListener(‘click’, closeModal);
-  backdrop.addEventListener(‘click’, closeModal);
-  document.addEventListener(‘keydown’, function (e) {
-    if (e.key === ‘Escape’) closeModal();
-  });
-})();
-</script>
+During my master’s studies, I was awarded first prize in the Afflelou Challenge, a competition recognizing excellence at the bachelor’s level, thanks to my work on the development of a telematic system for visual health in rural areas. This achievement also opened the door to my collaboration with the company, where I worked until 2024.
 
 In 2024, I was awarded a prestigious MSCA grant at Nicolaus Copernicus University to join the [BE-LIGHT](https://belightproject.eu/) project. Since then, I have been pursuing my PhD, focused on the measurement of the biomechanical properties of the cornea using optical coherence elastography.
 
