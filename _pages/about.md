@@ -63,9 +63,10 @@ I am always open to scientific collaborations, discussions, or simply connecting
       <label for="tl-0">2021–22</label>
       <div class="tl-body">
         <div class="tl-text">
-          <p>During my final bachelor's project, I was working in the TOL lab at the Faculty of Zaragoza. There, I studied the viability of digital holography to measure the topography of the cornea. This investigation gave me the opportunity to speak at the OPTOM 2022 conference.</p>
+          <p>During my final bachelor's project, I was working in the TOL lab at the Faculty of Zaragoza. There, I studied the viability of digital holography to measure the topography of the cornea. This investigation gave me the opportunity to speak at the OPTOM 2022 conference. </p>
+          <p><img src="/images/timeline/OPTOM2022.jpg" alt="OPTOM 2022 Conference"></p>
         </div>
-        <img src="/images/timeline/OPTOM2022.jpg" alt="OPTOM 2022 Conference">
+
       </div>
     </li>
 
