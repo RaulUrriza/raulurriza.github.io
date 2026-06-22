@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Raul Urriza Arpal"
+title                    : "Raul Urriza-Arpal"
 title_separator          : "-"
-name                     : "Raul Urriza Arpal"
+name                     : "Raul Urriza-Arpal"
 description              : "Raul Urriza's academic portfolio. MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://raulurriza.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
@@ -24,7 +24,7 @@ repository               : "raulurriza.github.io"
 author:
   # Biographic information
   avatar           : "Foto_Perfil.jpeg"
-  name             : "Raúl Urriza Arpal"
+  name             : "Raul Urriza-Arpal"
   pronouns         : # example: "she/her"  
   bio              : "MSCA PhD candidate in Biophysics | Researcher in Photonic Technologies and Machine Learning"
   location         : "Torun, Poland"
