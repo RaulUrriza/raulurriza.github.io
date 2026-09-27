@@ -68,7 +68,7 @@ Teaching
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
   
-Lenguages
+Languages
 ======
 * Spanish: Native
 * English: Professional
