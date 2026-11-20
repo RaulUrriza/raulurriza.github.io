@@ -21,22 +21,54 @@ Education
 
 Work experience
 ======
-* September 2024 – Present: Research Assistant & Marie Skłodowska-Curie PhD Fellow
-  * Nicolaus Copernicus University, Toruń, Poland
-  * BE-LIGHT project (MSCA Fellowship). Research combining advanced optical imaging techniques with AI-driven analysis.
+<div class="xp-list" markdown="0">
 
-* September 2025: Research Intern
-  * Fundació de Recerca Sant Joan de Déu, Barcelona, Spain
-  * Developed theoretical and practical skills in super-resolution image analysis with Confocal Microscopy, STED and Raman Spectroscopy. Contributed to Collagen VI and Retinoblastoma projects through supervised hands-on tasks; worked with laboratory workflows and bioinformatics tools (FIJI and Python libraries).
+  <div class="xp">
+    <div class="xp__logo"><img src="{{ base_path }}/images/logos/ncu.png" alt="Nicolaus Copernicus University logo"></div>
+    <div class="xp__body">
+      <p class="xp__role">Marie Skłodowska-Curie PhD Fellow &amp; Research Assistant</p>
+      <p class="xp__org">Nicolaus Copernicus University, Toruń, Poland</p>
+      <p class="xp__date">September 2024 – Present</p>
+      <p class="xp__desc">BE-LIGHT project (MSCA Fellowship). Research combining advanced optical imaging techniques with AI-driven analysis.</p>
 
-* July 2022 – September 2024: Optician and Optometrist
-  * AFFLELOU Grupo, Zaragoza, Spain
-  * Adaptation to new trends in optics, eye tests and vision correction technologies. Eye prescription, lenses and contact lens fitting, eye health prevention, and eyestrain measurement. Business development and personalized customer service.
+      <div class="xp__sub">
+        <p class="xp__sub-title">Research stays within the PhD</p>
 
-* January 2021 – May 2021: Optician and Optometrist
-  * OptiWeb, Zaragoza, Spain
-  * Prevention, detection and solution of visual problems, prescriptions, fitting and customer service.
-  
+        <div class="xp">
+          <div class="xp__logo"><img src="{{ base_path }}/images/logos/gdansk-tech.png" alt="Gdańsk University of Technology logo"></div>
+          <div class="xp__body">
+            <p class="xp__role">PhD Secondment</p>
+            <p class="xp__org">Gdańsk University of Technology, Gdańsk, Poland</p>
+            <p class="xp__date">June 2026 – September 2026</p>
+            <p class="xp__desc">Research secondment as part of the BE-LIGHT MSCA doctoral programme.</p>
+          </div>
+        </div>
+
+        <div class="xp">
+          <div class="xp__logo"><img src="{{ base_path }}/images/logos/sjd.png" alt="Sant Joan de Déu logo"></div>
+          <div class="xp__body">
+            <p class="xp__role">PhD Secondment (Research Intern)</p>
+            <p class="xp__org">Fundació de Recerca Sant Joan de Déu, Barcelona, Spain</p>
+            <p class="xp__date">September 2025</p>
+            <p class="xp__desc">Developed theoretical and practical skills in super-resolution image analysis with Confocal Microscopy, STED and Raman Spectroscopy. Contributed to Collagen VI and Retinoblastoma projects through supervised hands-on tasks; worked with laboratory workflows and bioinformatics tools (FIJI and Python libraries).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="xp">
+    <div class="xp__logo"><img src="{{ base_path }}/images/logos/afflelou.png" alt="Alain Afflelou logo"></div>
+    <div class="xp__body">
+      <p class="xp__role">Optician and Optometrist</p>
+      <p class="xp__org">AFFLELOU Grupo, Zaragoza, Spain</p>
+      <p class="xp__date">July 2022 – September 2024</p>
+      <p class="xp__desc">Adaptation to new trends in optics, eye tests and vision correction technologies. Eye prescription, lenses and contact lens fitting, eye health prevention, and eyestrain measurement. Business development and personalized customer service.</p>
+    </div>
+  </div>
+
+</div>
+
 Skills
 ======
 * Optical Design
